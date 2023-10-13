@@ -14,7 +14,7 @@ const newProdact = function (arrayProduct) {
           <p class="card-text">${prod.description}</p>
           <p class="card-text"><small class="text-black-50">Prezzo:</small> ${prod.price}€</p>
           <a href="./detail.html?prodId=${prod._id}" class="btn" style="background-color: #451373; color: white;">DETAIL</a>
-          <a href="./back.html?prodId=${prod._id}"  class="btn btn-warning">MODIFY</a>
+          <a href="./back.html?prodId=${prod._id}"  class="btn btn-warning">FIND OUT MORE</a>
 
         </div>
       </div>`
