@@ -1,0 +1,20 @@
+<div class="col col-12 col-lg-6">
+  <div class="card">
+    <h2 class="text-center">${details.name}</h2>
+    <img
+      src="${details.imageUrl}"
+      class="w-100"
+      alt="generic concert picture"
+    />
+    <h3 class="text-center mt-4">${details.brand}</h3>
+    <p>${details.description}</p>
+    <p>Prezzo: ${details.price}€</p>
+    <button class="btn btn-danger" onclick="deleteProd()">ELIMINA</button>
+    <a
+      class="btn btn-warning"
+      href="./back.html?prodId=${details._id
+  }"
+      >MODIFICA</a
+    >
+  </div>
+</div>
