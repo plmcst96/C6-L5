@@ -43,7 +43,21 @@ const getProduct = function () {
             if (res.ok) {
                 return res.json()
             } else {
-                throw new Error('Errore nella response')
+                if (res.status === 404) {
+                    alert('404 - Not Found')
+                    throw new Error('404 - Not Found')
+                } else if (res.status === 500) {
+                    alert('500 - Internal Server Error')
+                    throw new Error('500 - Internal Server Error')
+                } else if (res.status === 401) {
+                    alert('401 - Unauthorized')
+                    throw new Error('401 - Unauthorized')
+                } else if (res.status === 503) {
+                    alert('503 - Service Unvailable')
+                    throw new Error('503 - Service Unvailable')
+                } else {
+                    throw new Error('Errore nella response')
+                }
             }
         })
         .then((product) => {
