@@ -29,6 +29,7 @@ if (prodId) {
             const brand = document.getElementById('brand')
             const price = document.getElementById('price')
 
+
             // li ripopolo con i dettagli di prodDet
             name.value = prodDet.name
             img.value = prodDet.imageUrl
@@ -93,4 +94,12 @@ formReference.addEventListener('submit', function (e) {
             console.log('errore', err)
         })
 })
+
+const resetForm = function () {
+    // Ottieni il riferimento al form
+    const form = document.getElementById('form');
+
+    // Resetta il form
+    form.reset();
+}
 
