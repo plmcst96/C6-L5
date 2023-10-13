@@ -7,13 +7,13 @@ const newProdact = function (arrayProduct) {
         const col = document.createElement('div')
         col.classList.add('col', 'col-12', 'col-sm-6', 'col-md-3')
         col.innerHTML = `<div class="card mt-4" style="height:80vh">
-        <img src=${prod.imageUrl} class="card-img-top" alt=${prod.description} height="390px">
+        <img src=${prod.imageUrl} class="card-img-top" alt=${prod.description} height="360px">
         <div class="card-body d-flex justify-content-between flex-column">
           <h5 class="card-title">${prod.name}</h5>
           <h6 class="card-title" style="color:#A3D8D4">${prod.brand}</h6>
           <p class="card-text">${prod.description}</p>
           <p class="card-text"><small class="text-black-50">Prezzo:</small> ${prod.price}€</p>
-          <a href="./detail.html?prodId=${prod._id}" class="btn" style="background-color: #451373; color: white;">DETAIL</a>
+          <a href="./detail.html?prodId=${prod._id}" class="btn mb-2" style="background-color: #451373; color: white;">DETAIL</a>
           <a href="./back.html?prodId=${prod._id}"  class="btn btn-warning">FIND OUT MORE</a>
 
         </div>
