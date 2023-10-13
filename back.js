@@ -13,8 +13,10 @@ if (prodId) {
     })
         .then((res) => {
             if (res.ok) {
+
                 // la response è ok! estraiamo i dettagli
                 return res.json()
+
             } else {
                 throw new Error('ERRORE NEL RECUPERO DETTAGLIO')
             }

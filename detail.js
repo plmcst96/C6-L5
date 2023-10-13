@@ -34,8 +34,7 @@ const generateProdDet = function (details) {
     // prendo un riferimento alla row
     const row = document.getElementById('detail-row')
     row.innerHTML = `
-          <div class="col col-12 col-lg-6">
-          <div class="card">
+          <div class="col col-12 col-lg-6" style="width:80%;">
               <h2 class="text-center">${details.name}</h2>
               <img
                 src=${details.imageUrl}
@@ -47,11 +46,11 @@ const generateProdDet = function (details) {
                 ${details.description}
               </p>
               <p>Prezzo: ${details.price}€</p>
-              <button class="btn btn-danger" onclick="deleteProd()">ELIMINA</button>
+              <button class="btn" onclick="deleteProd()" style="background-color: #451373; color: white;">DELETE</button>
               <a class="btn btn-warning" href="./back.html?prodId=${details._id
-        }">MODIFICA</a>
+        }">MODIFY</a>
           </div>
-          </div>
+     
       `
 }
 
